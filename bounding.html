@@ -33,6 +33,10 @@
                     await fetch("https://api.thedogapi.com/v1/images/search?mime_types=jpeg")
                         .then((res) => res.json())
                         .then((json) => json[0].url),
+                fox: async () =>
+                    await fetch("https://randomfox.ca/floof/")
+                        .then((res) => res.json())
+                        .then((json) => json.image),
             };
 
             // Parse url get parameters
